@@ -11,7 +11,7 @@
     "expo:static:build": "node scripts/build.js",
     "server:build": "esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=server_dist",
     "server:prod": "NODE_ENV=production node server_dist/index.js",
-    "seed": "cross-env NODE_ENV=production tsx server/seed.ts",
+    "seed": "cross-env NODE_ENV=production tsx server/seed-cli.ts",
     "db:push": "drizzle-kit push",
     "lint": "npx expo lint",
     "lint:fix": "npx expo lint --fix",

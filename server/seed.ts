@@ -257,20 +257,5 @@ export async function seedDatabase() {
   }
 }
 
-/**
- * CLI entry point for manual seeding via `npm run seed`
- * Usage: npm run seed
- */
-if (import.meta.url === `file://${process.argv[1]}`) {
-  (async () => {
-    try {
-      console.log("=== Manual Database Seed Started ===");
-      await seedDatabase();
-      console.log("=== Manual Database Seed Completed Successfully ===");
-      process.exit(0);
-    } catch (error) {
-      console.error("=== Manual Database Seed Failed ===", error);
-      process.exit(1);
-    }
-  })();
-}
+// CLI entrypoint moved to server/seed-cli.ts
+// This file now only exports seedDatabase() for use in server/index.ts
