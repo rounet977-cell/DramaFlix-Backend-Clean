@@ -1,9 +1,10 @@
 {
   "name": "my-app",
   "type": "module",
-  "main": "client/index.js",
+  "main": "server_dist/index.js",
   "version": "1.0.0",
   "scripts": {
+    "start": "npm run server:build && NODE_ENV=production node server_dist/index.js",
     "expo:dev": "npx expo start",
     "server:dev": "cross-env NODE_ENV=development tsx server/index.ts",
     "expo:start:static:build": "npx expo start --no-dev --minify --localhost",
