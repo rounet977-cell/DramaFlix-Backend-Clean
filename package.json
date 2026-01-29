@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "type": "module",
-  "main": "client/index.js",
+  "main": "server_dist/index.js",
   "version": "1.0.0",
   "scripts": {
     "expo:dev": "npx expo start",
