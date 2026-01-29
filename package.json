@@ -13,6 +13,7 @@
     "server:prod": "NODE_ENV=production node server_dist/index.js",
     "seed": "cross-env NODE_ENV=production tsx server/seed.ts",
     "db:push": "drizzle-kit push",
+    "db:migrate": "drizzle-kit migrate"
     "lint": "npx expo lint",
     "lint:fix": "npx expo lint --fix",
     "check:types": "tsc --noEmit",
